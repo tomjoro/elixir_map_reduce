@@ -7,7 +7,7 @@ I'm working on it! If you're interested in this tutorial, send me a note to hurr
 
 # Introduction
 
-I have searched for map/reduce implementation in Elixir and have found a couple of versions. These m/r versions create one process per emitter and then use a single process for reducing (all reduction messages received by a single process).
+I have searched for map/reduce implementations in Elixir and have found a couple of versions. These m/r versions create one process per emitter and then use a single process for reducing (all reduction messages received by a single process).
 
 In this tutorial I will create n emitters, and m reducers. Anyways, I think there should be at least one reducer per reduction key (possibly more) which then is accumulated by a final process. Also, it doesn't make a lot of sense to create more emitters processes than reducers can keep up with. 
 
