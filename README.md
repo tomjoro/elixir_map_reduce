@@ -17,7 +17,7 @@ I won't try to implement every general case, but consider specific cases.
 
 An initial collection will be broken into parts. Each part will be given to a emitter process.
 
-A reducer process will be created for each matching reduction pattern
+A reducer process will be created for each (detected unique) matching reduction pattern
 
 This will require distributing the <pid> for each reduction matcher to the emitters (or some sort of lookup / dispatch).
 
