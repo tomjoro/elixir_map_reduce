@@ -19,7 +19,7 @@ An initial collection will be broken into parts. Each part will be given to a em
 
 A reducer process will be created for each (detected unique) matching reduction pattern
 
-This will require distributing the <pid> for each reduction matcher to the emitters (or some sort of lookup / dispatch).
+This will require distributing the pid for each reduction matcher to the emitters (or some sort of lookup / dispatch).
 
 When all data is emitted, a final end-signal will be emitted to each reducer which will trigger them to send their reudctions to the final accumulator.
 
