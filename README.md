@@ -21,7 +21,9 @@ A reducer process will be created for each (detected unique) matching reduction 
 
 This will require distributing the pid for each reduction matcher to the emitters (or some sort of lookup / dispatch).
 
-When all data is emitted, a final end-signal will be emitted to each reducer which will trigger them to send their reudctions to the final accumulator.
+When all data is emitted, a final end-signal will be emitted to each reducer which will trigger them to send their completed reductions to the final accumulator (which really just is an list aggregator).
 
 A m/r implemented like this will require tuning for the dataset, but I hope to implement enough controls to make it sensible.
+
+Future version could have multiple reducers per unique matching emitted pattern, but I think for the sake of the example a one-one patter/reducer will work well.
 
